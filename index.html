@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="Z8ZItijhQ2Y3ZfoZj4499xHhaWnVp5szJJ4kVhr0Jac" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rida Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
@@ -129,149 +128,41 @@
         </div>
     </div>
     </section>
-    <!-- =================== JOURNEY SECTION =================== -->
-
-    <section class="about-journey" id="education">
+    <!-- MY JOURNEY -->
+     <section class="about-journey">
         <div class="journey">
-            <h4 class="jour">— JOURNEY —</h4>
+            <h4 class="jour">-JOURNEY</h4>
             <h2 class="Jour">Education & Training</h2>
         </div>
         <div class="jour-card">
-        <!-- Timeline -->
-        <div class="timeline"></div>
-        <!-- Decorative Shapes -->
-        <div class="floating-circle circle1"></div>
-        <div class="floating-circle circle2"></div>
-        <div class="floating-ring"></div>
-        <div class="floating-square"></div>
-        <div class="glow glow1"></div>
-        <div class="glow glow2"></div>
-        <!-- ================= Card 1 ================= -->
-        <div class="journey-card card1">
-            <span class="dot"></span>
-            <div class="card-icon">
-                🎓
+            <div class="top-right-card">
+                <h3>Academic</h3>
+                <h2>Intermediate(ICS)</h2>
+                <p>Foundation in computer science, mathematics & statistics.</p>
             </div>
-            <h4>ACADEMIC</h4>
-            <h2>Intermediate (ICS)</h2>
-            <p>
-                Completed Intermediate in Computer Science with a strong
-                foundation in programming, mathematics and logical
-                problem solving.
-            </p>
-        </div>
-        <!-- ================= Card 2 ================= -->
-        <div class="journey-card card2">
-            <span class="dot"></span>
-            <div class="card-icon">
-                &lt;/&gt;
+            <div class="top-left-card">
+                <h3>Training</h3>
+                <h2>WEB DEVELOPMENT</h2>
+                <p>HTML5, CSS3, JavaScript & responsive design principles.</p>
             </div>
-            <h4>PROFESSIONAL TRAINING</h4>
-            <h2>Web Development</h2>
-            <p>
-                Learned HTML5, CSS3, JavaScript,
-                Responsive Web Design,
-                UI Development and Website Deployment.
-            </p>
-        </div>
-                <!-- ================= Card 3 ================= -->
-        <div class="journey-card card3">
-            <span class="dot"></span>
-            <div class="card-icon">
-                ⚛
+            <div class="middle-right-card">
+                <h3>Training</h3>
+                <h2>REACT DEVELOPMENT</h2>
+                <p>Modern component architecture, hooks and state management.</p>
             </div>
-            <h4>PROFESSIONAL TRAINING</h4>
-            <h2>React Development</h2>
-            <p>
-                Built modern React applications using Components,
-                Props, Hooks, State Management, Routing and
-                reusable UI architecture for scalable projects.
-            </p>
-        </div>
-        <!-- ================= Card 4 ================= -->
-        <div class="journey-card card4">
-            <span class="dot"></span>
-            <div class="card-icon">
-                🤖
+            <div class="bottom-left-card">
+                <h3>Training</h3>
+                <h2>AGENTIC AI</h2>
+                <p>Designing autonomous, tool-using AI agents.</p>
             </div>
-            <h4>PROFESSIONAL TRAINING</h4>
-            <h2>Agentic AI</h2>
-            <p>
-                Developed intelligent AI agents capable of
-                automation, tool usage, prompt engineering,
-                workflow orchestration and real-world problem solving
-                using modern AI technologies.
-            </p>
+            <div class="bottom-right-card">
+                <h3>Training</h3>
+                <h2>PYTHON PROGRAMMING</h2>
+                <p>Automation, scripting & AI foundations.</p>
+            </div>  
         </div>
-                <!-- ================= Card 5 ================= -->
-        <div class="journey-card card5">
-            <span class="dot"></span>
-            <div class="card-icon">
-                🐍
-            </div>
-            <h4>PROFESSIONAL TRAINING</h4>
-            <h2>Python Programming</h2>
-            <p>
-                Developed strong programming fundamentals including
-                variables, loops, functions, file handling,
-                object-oriented programming, automation,
-                problem-solving and AI application development
-                using Python.
-            </p>
-        </div>
-        <!-- Decorative Floating Particles -->
-        <div class="particle particle1"></div>
-        <div class="particle particle2"></div>
-        <div class="particle particle3"></div>
-        <div class="particle particle4"></div>
-        <div class="particle particle5"></div>
-        <!-- Floating Shapes -->
-        <div class="floating-circle circle1"></div>
-        <div class="floating-circle circle2"></div>
-        <div class="floating-ring"></div>
-        <div class="floating-square"></div>
-        <!-- Glow Effects -->
-        <div class="glow glow1"></div>
-        <div class="glow glow2"></div>
-    </div>
-</section>
-<!-- ================= END OF JOURNEY SECTION ================= -->
-    <!-- Typewriter Effect -->
-    <script>
-        const skills = [
-            "Python Developer",
-            "Front-end Developer",
-            "React JS Developer",
-            "Agentic AI Developer"
-        ];
-        let skillIndex = 0;
-        let charIndex = 0;
-        const quote = document.getElementById("quote");
-        function typeSkill() {
-            if (charIndex < skills[skillIndex].length) {
-                quote.innerHTML += skills[skillIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(typeSkill, 100);
-            } else {
-                setTimeout(eraseSkill, 1500);
-            }
-        }
-        function eraseSkill() {
-            if (charIndex > 0) {
-                quote.innerHTML = skills[skillIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(eraseSkill, 50);
-            } else {
-                skillIndex++;
-                if (skillIndex >= skills.length) {
-                    skillIndex = 0;
-                }
-                setTimeout(typeSkill, 400);
-            }
-        }
-        typeSkill();
-    </script>
-    <!-- =========================== SKILLS ================= -->
+     </section>
+     <!-- =========================== SKILLS ================= -->
     <section class="skills-section" id="skills">
        <div class="skills-title">
         <h4>— SKILLS —</h4>
@@ -398,7 +289,7 @@
                 <a href="https://www.linkedin.com/posts/rida-fatima-zubair-9562b33aa_oasisinfobyte-webdevelopment-frontenddevelopment-ugcPost-7490070006165311488-V2Jw/?utm_source=share&utm_medium=member_android&rcm=ACoAAGQRTJIB_hg-yeeLDX-iaZPL9J8H9MK1H6o" class="live-btn" target="_blank">
                     Watch Demo ↗
                 </a>
-                <a href="https://github.com/Girllikeridu/OIBSIP_LANDING-PAGE.git" class="github-btn" target="_blank">
+                <a href="https://github.com/Girllikeridu/OIBSIP_LANDING-PAGE.git" class="github-btn" target="_blank"><i class="fa-brands fa-github"></i>
                     GitHub
                 </a>
             </div>
@@ -425,7 +316,7 @@
            </div>
            <div class="project-buttons">
             <a href="https://www.linkedin.com/posts/rida-fatima-zubair-9562b33aa_python-dataanalytics-datascience-activity-7491488376039067648-KQQX?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAGQRTJIB_hg-yeeLDX-iaZPL9J8H9MK1H6o&utm_campaign=copy_link" class="live-btn">View Presntation ↗</a>
-            <a href="https://github.com/Girllikeridu/Movie-Industry-Analytics-Platform.git" class="github-btn">GitHub</a>
+            <a href="https://github.com/Girllikeridu/Movie-Industry-Analytics-Platform.git" class="github-btn"><i class="fa-brands fa-github"></i>GitHub</a>
            </div>
         </div>
         <div class="project-image">
@@ -474,7 +365,161 @@
                 <a href="" class="live-btn" target="_blank">
                     Watch Demo ↗
                 </a>
-                <a href="" class="github-btn" target="_blank">
+                <a href="" class="github-btn" target="_blank"><i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- !-- ================= PROJECT CARD 4 ================= -->
+    <div class="project-card">
+           <div class="project-content">
+           <span class="project-category">
+            AI • AUTOMATION
+            </span>
+            <h2>
+            Movie Industry Analytics AI
+            </h2>
+            <p>
+            AI-powered movie analytics assistant built with n8n and Google Gemini. It analyzes movie data from Google Sheets and provides insights about genres, ratings, budgets, and movie performance through natural-language conversations.
+            </p>
+           <div class="tech-stack">
+            <span><i class="fa-solid fa-diagram-project"></i>N8N</span>
+            <span><i class="fa-solid fa-wand-magic-sparkles"></i>GOOGLE GEMINI</span>
+            <span><i class="fa-solid fa-table"></i>GOOGLE SHEETS</span>
+            <span><i class="fa-solid fa-robot"></i>AI AGENT</span>
+            <span><i class="fa-solid fa-gears"></i>AUTOMATION</span>
+           </div>
+           <div class="project-buttons">
+            <a href="https://www.linkedin.com/posts/rida-fatima-zubair-9562b33aa_python-dataanalytics-datascience-activity-7491488376039067648-KQQX?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAGQRTJIB_hg-yeeLDX-iaZPL9J8H9MK1H6o&utm_campaign=copy_link" class="live-btn">View DEMO ↗</a>
+            <a href="https://github.com/Girllikeridu/Movie-Industry-Analytics-Platform.git" class="github-btn"><i class="fa-brands fa-github"></i>GitHub</a>
+           </div>
+        </div>
+        <div class="project-image">
+            <div class="laptop">
+                <div class="screen">
+                   <img src="images/project4.png" alt="E-Commerce Website">
+                </div>
+
+                <div class="keyboard"></div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+    </div>
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+        <div class="how-left">
+            <span class="project-category">AI • WORKFLOW</span>
+            <h2>How It Works</h2>
+            <p>
+            The agent connects multiple tools and data sources
+            to analyze movie information and answer your questions.
+            </p>
+        </div>
+        <div class="workflow-diagram">
+            <div class="workflow-box chat-box">
+                <div class="workflow-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <div>
+                <h3>Chat Trigger</h3>
+                <span>(n8n)</span>
+            </div>
+        </div>
+        <div class="arrow horizontal">→</div>
+            <div class="agent-column">
+                <div class="workflow-box small-box">
+                    <div class="workflow-icon gemini">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                <div>
+                    <h3>Google Gemini</h3>
+                    <span>(Chat Model)</span>
+                </div>
+            </div>
+            <div class="vertical-arrow">↕</div>
+            <div class="workflow-box agent-box">
+                <div class="workflow-icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h3>AI Agent</h3>
+                    <span>(n8n)</span>
+                </div>
+            </div>
+            <div class="vertical-arrow">↕</div>
+            <!-- Memory -->
+            <div class="workflow-box small-box">
+                <div class="workflow-icon memory">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div>
+                    <h3>Simple Memory</h3>
+                    <span>(Conversation Context)</span>
+                </div>
+            </div>
+        </div>
+        <!-- Connection to data -->
+        <div class="data-connector">
+            <div class="connector-line"></div>
+        </div>
+        <!-- Data Sources -->
+        <div class="data-column">
+            <div class="workflow-box data-box">
+                <div class="workflow-icon sheets">
+                    <i class="fa-solid fa-table"></i>
+                </div>
+                <div>
+                    <h3>Movie Dataset</h3>
+                    <span>(Google Sheets)</span>
+                </div>
+            </div>
+            <div class="workflow-box data-box">
+                <div class="workflow-icon sheets">
+                    <i class="fa-solid fa-table"></i>
+                </div>
+                <div>
+                    <h3>FAQs</h3>
+                    <span>(Google Sheets)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- !-- ================= PROJECT CARD 5 ================= -->
+    <div class="project-card">
+        <!-- LEFT SIDE -->
+        <div class="project-image">
+            <div class="laptop">
+                <div class="screen">
+                    <img src="images/project5.png" alt="Coffee Shop">
+                </div>
+                <div class="keyboard"></div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="project-content">
+            <span class="project-category">
+                HTML • CSS • JAVASCRIPT
+            </span>
+            <h2>
+                DIGITAL CLOCK
+            </h2>
+            <p>
+                A clean and aesthetic digital clock built with HTML, CSS, JavaScript, and Bootstrap. It displays the current time and date dynamically, with a modern responsive design and an elegant background that makes the interface simple and visually appealing.
+            </p>
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>BOOTSTRAP</span>
+            </div>
+            <div class="project-buttons">
+                <a href="" class="live-btn" target="_blank">
+                    Watch Demo ↗
+                </a>
+                <a href="" class="github-btn" target="_blank"><i class="fa-brands fa-github"></i>
                     GitHub
                 </a>
             </div>
@@ -573,5 +618,40 @@
         </div>
     </div>
 </footer>
+    <!-- Typewriter Effect -->
+    <script>
+        const skills = [
+            "Python Developer",
+            "Front-end Developer",
+            "React JS Developer",
+            "Agentic AI Developer"
+        ];
+        let skillIndex = 0;
+        let charIndex = 0;
+        const quote = document.getElementById("quote");
+        function typeSkill() {
+            if (charIndex < skills[skillIndex].length) {
+                quote.innerHTML += skills[skillIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeSkill, 100);
+            } else {
+                setTimeout(eraseSkill, 1500);
+            }
+        }
+        function eraseSkill() {
+            if (charIndex > 0) {
+                quote.innerHTML = skills[skillIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(eraseSkill, 50);
+            } else {
+                skillIndex++;
+                if (skillIndex >= skills.length) {
+                    skillIndex = 0;
+                }
+                setTimeout(typeSkill, 400);
+            }
+        }
+        typeSkill();
+    </script>
 </body>
 </html>
