@@ -1855,3 +1855,583 @@ header{
         width: 117%;
     }
 }
+
+
+/* =========================================================
+   MOBILE RESPONSIVE FIX
+   Desktop / laptop styles above remain unchanged.
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    /* ---------------- NAVBAR ---------------- */
+    .navbar {
+        width: 94%;
+        top: 12px;
+        padding: 13px 15px;
+        border-radius: 28px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px 5px;
+        justify-items: center;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .nav-links a::after {
+        bottom: -3px;
+        height: 2px;
+    }
+
+    /* ---------------- HERO ---------------- */
+    header {
+        min-height: auto;
+        width: 100%;
+        margin-top: 155px;
+        padding: 55px 20px 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+    }
+
+    .header-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    #intro {
+        font-size: clamp(2.25rem, 10vw, 3.3rem);
+        margin-top: 0;
+    }
+
+    #intro span {
+        font-size: .85em;
+        margin-top: 10px;
+    }
+
+    #quote {
+        font-size: clamp(25px, 7vw, 34px);
+        margin-top: 25px;
+        min-height: 42px;
+    }
+
+    .para {
+        width: 100%;
+        max-width: 600px;
+        padding-top: 10px;
+        margin: 15px auto 30px;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .ctn {
+        width: min(100%, 240px);
+        margin-right: 0;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    /* ---------------- PROFILE CARD ---------------- */
+    .hero-right {
+        width: 100%;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-card {
+        width: min(88vw, 360px);
+        height: min(128vw, 520px);
+        padding: 14px;
+    }
+
+    .inner-card {
+        height: 92%;
+        border-radius: 25px;
+    }
+
+    .profile-circle {
+        width: 60px;
+        height: 60px;
+        top: 14px;
+        left: 14px;
+    }
+
+    .center-content h1 {
+        font-size: clamp(95px, 30vw, 130px);
+    }
+
+    .center-content p {
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+
+    .diamond {
+        width: 40px;
+        height: 40px;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .card-footer {
+        left: 18px;
+        right: 18px;
+        bottom: 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    /* ---------------- ABOUT ---------------- */
+    .about-section {
+        padding: 80px 6%;
+    }
+
+    .title {
+        margin-bottom: 45px;
+    }
+
+    .title h4 {
+        font-size: 16px;
+    }
+
+    #approach {
+        font-size: clamp(30px, 8vw, 42px);
+        line-height: 1.2;
+    }
+
+    .about-content {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .hero-left,
+    .vertical {
+        width: 100%;
+    }
+
+    .image-card {
+        width: min(82vw, 360px);
+        height: min(112vw, 480px);
+    }
+
+    .inner-info {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .cards {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+        min-height: auto;
+    }
+
+    /* ---------------- JOURNEY ---------------- */
+    .about-journey {
+        padding: 75px 6% 30px;
+    }
+
+    .journey {
+        margin-bottom: 45px;
+    }
+
+    .jour {
+        font-size: 15px;
+    }
+
+    .Jour {
+        font-size: clamp(30px, 8vw, 42px);
+    }
+
+    .jour-card {
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .jour-card::before {
+        display: none;
+    }
+
+    .top-right-card,
+    .top-left-card,
+    .middle-right-card,
+    .bottom-left-card,
+    .bottom-right-card {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        width: 100%;
+        padding: 25px;
+        border-radius: 25px;
+    }
+
+    /* ---------------- SKILLS ---------------- */
+    .skills-section {
+        padding: 80px 6%;
+    }
+
+    .skills-title {
+        margin-bottom: 45px;
+    }
+
+    .skills-title h4 {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .skills-title h3 {
+        font-size: clamp(32px, 8vw, 45px);
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill-card,
+    .skill-card:nth-child(4),
+    .skill-card:nth-child(5) {
+        grid-column: auto;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .card-top h2 {
+        font-size: 28px;
+    }
+
+    .tags {
+        gap: 9px;
+    }
+
+    .tags span {
+        font-size: 12px;
+        padding: 9px 13px;
+    }
+
+    /* ---------------- PROJECTS ---------------- */
+    .projects {
+        width: 100%;
+        padding: 75px 5% 30px;
+    }
+
+    .project-title {
+        margin-bottom: 45px;
+    }
+
+    .project-title h3 {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .project-title h2 {
+        font-size: clamp(32px, 8vw, 46px);
+        line-height: 1.2;
+    }
+
+    .project-title p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .project-tag {
+        gap: 8px;
+        margin-top: 25px;
+    }
+
+    .project-tag span {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 45px auto 0;
+        padding: 28px 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        transform: none;
+        border-radius: 28px;
+    }
+
+    .project-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .laptop {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .screen {
+        padding: 9px;
+        border-radius: 14px;
+    }
+
+    .keyboard {
+        height: 12px;
+    }
+
+    .shadow {
+        height: 15px;
+        margin-top: 12px;
+    }
+
+    .project-content {
+        width: 100%;
+    }
+
+    .project-content h2 {
+        font-size: clamp(30px, 8vw, 44px);
+        line-height: 1.2;
+        margin-bottom: 18px;
+    }
+
+    .project-content p {
+        font-size: 15px;
+        line-height: 1.75;
+        margin-bottom: 22px;
+    }
+
+    .tech-stack {
+        gap: 8px;
+        margin-top: 18px;
+        margin-bottom: 25px;
+    }
+
+    .tech-stack span {
+        padding: 9px 13px;
+        font-size: 12px;
+    }
+
+    .project-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .live-btn,
+    .github-btn {
+        width: 100%;
+        text-align: center;
+        padding: 13px 20px;
+    }
+
+    /* ---------------- HOW IT WORKS ---------------- */
+    .how-it-works {
+        width: 92%;
+        margin-top: 45px;
+        padding: 28px 20px;
+        border-radius: 25px;
+        gap: 30px;
+        overflow: hidden;
+    }
+
+    .how-left {
+        width: 100%;
+        max-width: none;
+    }
+
+    .how-left h2 {
+        font-size: clamp(28px, 7vw, 36px);
+    }
+
+    .how-left p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .workflow-diagram {
+        width: 100%;
+        min-height: auto;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .workflow-diagram > * {
+        flex-shrink: 0;
+    }
+
+    /* ---------------- CAREER ---------------- */
+    .career {
+        width: 92%;
+        margin-top: 35px;
+        padding: 55px 22px;
+        border-radius: 28px;
+    }
+
+    .career-quote {
+        font-size: 55px;
+        margin-bottom: 15px;
+    }
+
+    .career-title h4 {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .career-title p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    /* ---------------- CONTACT ---------------- */
+    .contact {
+        min-height: auto;
+        padding: 65px 5%;
+    }
+
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .info-card,
+    .form-card {
+        min-height: auto;
+        padding: 30px 22px;
+        border-radius: 28px;
+    }
+
+    .info-card h1 {
+        font-size: clamp(40px, 12vw, 58px);
+        letter-spacing: -2px;
+    }
+
+    .info-box {
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .info-box p {
+        font-size: 13px;
+        word-break: break-word;
+    }
+
+    .socials {
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 30px;
+    }
+
+    .row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-card button {
+        padding: 15px 20px;
+    }
+
+    /* ---------------- FOOTER ---------------- */
+    .footer {
+        min-height: 300px;
+        padding: 0 15px 30px;
+    }
+
+    .footer-card {
+        width: 95%;
+        height: auto;
+        min-height: 115px;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-name {
+        font-size: 18px;
+    }
+
+    .footer-credit {
+        min-width: auto;
+        font-size: 7px;
+        letter-spacing: 1.5px;
+    }
+
+    .footer-object {
+        transform: translate(-50%, -50%) scale(.65);
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+
+    .navbar {
+        width: 95%;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .profile-card {
+        width: 90vw;
+    }
+
+    .project-card {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .card-top h2 {
+        font-size: 24px;
+    }
+}
